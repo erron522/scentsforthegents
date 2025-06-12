@@ -70,6 +70,9 @@ const form = document.getElementById('subscribeForm');
         }
   
         updateCartUI();
+
+        // ✅ Open slide cart when "+" button is clicked
+         slideCart.classList.add("open");
       });
     });
   
@@ -81,7 +84,7 @@ function updateCartUI() {
     if (cart.length === 0) {
       cartItemsList.innerHTML = "<li>No items yet</li>";
       cartCount.textContent = "(0)";
-      cartTotal.textContent = "Total: $0.00";  // reset total
+      cartTotal.textContent = "Check Out: $0.00";  // reset total
       return;
     }
   
@@ -103,7 +106,7 @@ function updateCartUI() {
     cartCount.textContent = `(${totalItems})`;
   
     const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-    cartTotal.textContent = `Total: $${totalPrice.toFixed(2)}`;
+    cartTotal.textContent = `Check Out: $${totalPrice.toFixed(2)}`;
   }
   
   });
