@@ -538,6 +538,45 @@ img#openSlideCart {
   border-bottom: 1px solid #ccc;
 }
 
+button.removeBttn {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 5px 0;
+}
+
+.remove-item-hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.remove-item-hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #335c67;
+  transition: transform 0.25s ease-out;
+}
+
+.remove-item-hover-underline-animation:hover::after {
+  transform: scaleX(1);
+}
+
+
+.remove-item-hover-underline-animation.center::after {
+  transform-origin: bottom center;
+}
+
+.remove-item-hover-underline-animation.center:hover::after {
+  transform-origin: bottom center;
+}
+
 /*  ipad 1024*/
 @media screen and (max-width: 1024px) {
   .productContainer {
