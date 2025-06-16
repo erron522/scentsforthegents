@@ -78,35 +78,47 @@ const form = document.getElementById('subscribeForm');
   
 
 
-function updateCartUI() {
-    cartItemsList.innerHTML = "";
-  
-    if (cart.length === 0) {
-      cartItemsList.innerHTML = "<li>No items yet</li>";
-      cartCount.textContent = "(0)";
-      cartTotal.textContent = "Check Out: $0.00";  // reset total
-      return;
-    }
-  
-    cart.forEach((item) => {
-      const li = document.createElement("li");
-      li.innerHTML = `
-        <div style="display: flex; align-items: center; gap: 10px;">
-          <div style="flex: 1;">
-            <strong>${item.title}</strong><br>
-            <small>Qty: ${item.quantity}</small><br>
-            <small>Price: $${(item.price * item.quantity).toFixed(2)}</small>
-          </div>
-        </div>
-      `;
-      cartItemsList.appendChild(li);
-    });
-  
-    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-    cartCount.textContent = `(${totalItems})`;
-  
-    const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
-    cartTotal.textContent = `Check Out: $${totalPrice.toFixed(2)}`;
-  }
+    function updateCartUI() {
+        cartItemsList.innerHTML = "";
+      
+        if (cart.length === 0) {
+          cartItemsList.innerHTML = "<li>No items yet</li>";
+          cartCount.textContent = "(0)";
+          cartTotal.textContent = "Check Out: $0.00";
+          return;
+        }
+      
+        cart.forEach((item, index) => {
+          const li = document.createElement("li");
+          li.innerHTML = `
+            <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px;">
+              <div style="flex: 1;">
+                <strong>${item.title}</strong><br>
+                <small>Qty: ${item.quantity}</small><br>
+                <small>Price: $${(item.price * item.quantity).toFixed(2)}</small>
+              </div>
+              <button class="removeBttn remove-item-hover-underline-animation center" data-index="${index}" >Remove</button>
+            </div>
+          `;
+          cartItemsList.appendChild(li);
+        });
+      
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        cartCount.textContent = `(${totalItems})`;
+      
+        const totalPrice = cart.reduce((sum, item) => sum + item.price * item.quantity, 0);
+        cartTotal.textContent = `Check Out: $${totalPrice.toFixed(2)}`;
+      
+        // Add event listeners to remove buttons
+        const removeButtons = document.querySelectorAll(".removeBttn");
+        removeButtons.forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            const index = parseInt(btn.getAttribute("data-index"));
+            cart.splice(index, 1); // Remove item from cart array
+            updateCartUI();        // Re-render the cart UI
+          });
+        });
+      }
+      
   
   });
