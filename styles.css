@@ -52,7 +52,7 @@ body {
 
 /* Banner */
 
-div#bannerSection {
+#bannerSection {
   padding-bottom: 33rem;
   margin-bottom: 0;
   background-color: #fff;
@@ -83,7 +83,7 @@ p#bannerDescription {
   color: #fff;
 }
 
-p#logoTitle {
+h1 {
   font-weight: bold;
   font-size: 55px;
   margin: 10px 0;
@@ -189,7 +189,6 @@ div#Imagination {
 
 div#Imagination:hover {
   background-image: url(images/homePgThumbnails-LVImagination.jpg);
-
 }
 
 div#creed {
@@ -265,7 +264,6 @@ div#lacoste {
 
 div#lacoste:hover {
   background-image: url(images/homePgThumbnails-lacoste.jpg);
-
 }
 
 .productContainerBox {
@@ -274,8 +272,6 @@ div#lacoste:hover {
   background: #e0e0e0;
   padding: 2% 4% 3%;
 }
-
-
 
 .productContainer {
   justify-content: center;
@@ -318,17 +314,19 @@ p.productTitle {
 .addToCartBttn {
   width: 35px;
   height: 35px;
-  transition: width .5s, height .5s;
-  /* background: #335c67; */
+  transition: width 0.5s, height 0.5s;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
   color: #e09f3e;
   border-radius: 5px;
-  padding: 0 0 3px;
+  padding: 3px 0;
   background: #335c67;
-  /* box-shadow: 0 4px 15px 0 rgba(23, 168, 108, 0.75); */
+}
+
+button {
+  border: none;
 }
 
 .addToCartBttn:hover {
@@ -377,7 +375,7 @@ div#cartTotal {
 
 /* Mid Banner*/
 
-div#midBannerSection {
+#midBannerSection {
   background-color: #fff;
   background-image: url(images/sfgBannerMidColorBlue.jpg);
   background-repeat: no-repeat;
@@ -406,7 +404,7 @@ form#subscribeForm {
 
 input#emailInput {
   height: 23px;
-  margin: 0 0 15px 0;
+  margin: 6px 0 15px 0;
   padding: 10px;
   width: 92.5%;
   text-align: center;
@@ -418,11 +416,11 @@ input#emailInput {
   opacity: 1; /* Firefox */
 }
 
-input#emailInput:focus {
+#emailInput:focus {
   outline: none;
 }
 
-input#submitBttn {
+#submitBttn {
   height: 45px;
   font-size: 17px;
   color: #fff;
@@ -432,7 +430,7 @@ input#submitBttn {
   cursor: pointer;
 }
 
-input#submitBttn:hover {
+#submitBttn:hover {
   background: #e09f3e;
   color: #fff;
   transition: all 0.5s ease 0s;
@@ -476,7 +474,7 @@ div#message {
 
 /* Footer */
 
-.footer {
+footer {
   font-size: 0.8em;
   padding: 20px;
   background: #e0e0e0;
@@ -553,7 +551,7 @@ button.removeBttn {
 }
 
 .remove-item-hover-underline-animation::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
@@ -567,7 +565,6 @@ button.removeBttn {
 .remove-item-hover-underline-animation:hover::after {
   transform: scaleX(1);
 }
-
 
 .remove-item-hover-underline-animation.center::after {
   transform-origin: bottom center;
@@ -597,17 +594,16 @@ button.removeBttn {
   }
 }
 
-
 /* Small Desktop 1170 */
 
 @media screen and (max-width: 1170px) {
   div#bannerSection {
     padding-left: 20px;
-}
+  }
 
-.navContainer {
+  .navContainer {
     padding: 0 20px;
-}
+  }
 }
 
 /* mobile view 480 */
@@ -653,5 +649,16 @@ button.removeBttn {
 
   .cartLogo {
     width: 38px;
+  }
+  form#subscribeForm {
+    width: 240px;
+  }
+
+  .formContainer {
+    height: 77%;
+  }
+
+  #midBannerSection {
+    height: 486px;
   }
 }

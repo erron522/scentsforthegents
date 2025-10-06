@@ -5,53 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gent Noir</title>
     <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   </head>
   <body style="margin: 0">
-    <!-- navigation -->
-    <div class="navContainer">
-      <div class="navigation">
-        <div class="logo">
-          <a href="#"
-            ><img src="images/GentNoir-logoWHI.png" alt="Gent Noir"
-          /></a>
-        </div>
-        <div class="cartSection">
-          <div class="cartLogo">
-            <img id="openSlideCart" title="View Cart" src="images/cartLogoWHI.png" alt="View Cart" />
+    <section>
+      <!-- navigation -->
+      <nav class="navContainer">
+        <div class="navigation">
+          <div class="logo">
+            <a href="#"><img src="images/GentNoir-logoWHI.png" alt="Gent Noir Logo" /></a>
           </div>
-          <div class="cart">(0)</div>
+          <div class="cartSection">
+            <div class="cartLogo">
+              <img id="openSlideCart" title="View Cart" src="images/cartLogoWHI.png" alt="View Shopping Cart" />
+            </div>
+            <div class="cart">(0)</div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- banner section -->
+      <div id="bannerSection" role="img" aria-label="Collage of men's fragrance bottles.">
+        <div class="cartContainer"></div>
+        <div class="bannerContent">
+          <h1 id="logoTitle">Men Luxury<br />Fragrances</h1>
+          <p id="bannerDescription">When a man wears the right cologne, it's impossible not to lean in—drawn by a scent so alluring, you'll want to stay wrapped in it.</p>
+          <br />
+          <a href="/products" target="_blank" rel="noopener" aria-label="Explore our products (opens in a new tab)" class="bannerBttn"> Explore our Products </a>
         </div>
       </div>
-    </div>
-
-    <!-- banner section -->
-    <div id="bannerSection">
-      <div class="cartContainer"></div>
-      <div class="bannerContent">
-        <p id="logoTitle">Men Luxury<br />Fragrances</p>
-        <p id="bannerDescription">
-          When a man wears the right cologne, it's impossible not to lean in—drawn by a scent so alluring, you’ll want to stay wrapped in it.
-        </p>
-        <br />
-        <a href="" class="bannerBttn">Explore our Products</a>
-      </div>
-    </div>
+    </section>
 
     <!-- main section -->
-    <div class="main">
+    <section class="main">
       <div class="subHeading"><h2>Explore our Best Sellers</h2></div>
       <div class="productContainer">
         <div class="productContainerBox">
-          <div id="Imagination"></div>
+          <div id="Imagination" role="img" aria-label="Imagination men fragrance bottle with a light grey background"></div>
           <p class="productTitle">Louis Vuitton Imagination</p>
 
           <div class="ratingContainer">
             <div class="ratinng">
-              <p class="starRating">
+              <p class="starRating" aria-label="Rated 5 out of 5 stars">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -60,19 +55,17 @@
                 (623)
               </p>
             </div>
-            <div class="addToCartBttn">&#x2b;</div>
+            <button class="addToCartBttn">&#x2b;</button>
           </div>
-          <div class="pricingContainer">
-            $345.00
-          </div>
+          <div class="pricingContainer">$345.00</div>
         </div>
         <div class="productContainerBox">
-          <div id="creed"></div>
+          <div id="creed" role="img" aria-label="Creed men fragrance bottle with a light grey background"></div>
           <p class="productTitle">Creed Aventus</p>
 
           <div class="ratingContainer">
             <div class="ratinng">
-              <p class="starRating">
+              <p class="starRating" aria-label="Rated 4 out of 5 stars">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -81,19 +74,17 @@
                 (697)
               </p>
             </div>
-            <div class="addToCartBttn">&#x2b;</div>
+            <button class="addToCartBttn">&#x2b;</button>
           </div>
-          <div class="pricingContainer">
-            $274.00
-          </div>
+          <div class="pricingContainer">$274.00</div>
         </div>
         <div class="productContainerBox">
-          <div id="sauvage"></div>
+          <div id="sauvage" role="img" aria-label="Sauvage men fragrance bottle with a light grey background"></div>
           <p class="productTitle">Sauvage Eau Forte</p>
 
           <div class="ratingContainer">
             <div class="ratinng">
-              <p class="starRating">
+              <p class="starRating" aria-label="Rated 4 out of 5 stars">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -102,18 +93,16 @@
                 (1207)
               </p>
             </div>
-            <div class="addToCartBttn">&#x2b;</div>
+            <button class="addToCartBttn">&#x2b;</button>
           </div>
-          <div class="pricingContainer">
-            $130.00
-          </div>
+          <div class="pricingContainer">$130.00</div>
         </div>
         <div class="productContainerBox">
-          <div id="versace"></div>
+          <div id="versace" role="img" label="Versace men fragrance bottle with a light grey background"></div>
           <p class="productTitle">Versace Eros Energy</p>
           <div class="ratingContainer">
             <div class="ratinng">
-              <p class="starRating">
+              <p class="starRating" aria-label="Rated 4 out of 5 stars">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -122,19 +111,17 @@
                 (368)
               </p>
             </div>
-            <div class="addToCartBttn">&#x2b;</div>
+            <button class="addToCartBttn">&#x2b;</button>
           </div>
-          <div class="pricingContainer">
-            $115.00
-          </div>
+          <div class="pricingContainer">$115.00</div>
         </div>
 
         <div class="productContainerBox">
           <div id="boss"></div>
-          <p class="productTitle">Hugo Boss Bottled Absolu</p>
+          <p class="productTitle" role="img" aria-label="Boss men fragrance bottle with a light grey background">Hugo Boss Bottled Absolu</p>
           <div class="ratingContainer">
             <div class="ratinng">
-              <p class="starRating">
+              <p class="starRating" aria-label="Rated 4 out of 5 stars">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -143,20 +130,18 @@
                 (912)
               </p>
             </div>
-            <div class="addToCartBttn">&#x2b;</div>
+            <button class="addToCartBttn">&#x2b;</button>
           </div>
-          <div class="pricingContainer">
-            $123.00
-          </div>
+          <div class="pricingContainer">$123.00</div>
         </div>
 
         <div class="productContainerBox">
-          <div id="lacoste"></div>
+          <div id="lacoste" role="img" aria-label="Lacoste men fragrance bottle with a light grey background"></div>
           <p class="productTitle">L'homme Lacoste</p>
 
           <div class="ratingContainer">
             <div class="ratinng">
-              <p class="starRating">
+              <p class="starRating" aria-label="Rated 4 out of 5 stars">
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
@@ -165,16 +150,14 @@
                 (761)
               </p>
             </div>
-            <div class="addToCartBttn">&#x2b;</div>
+            <button class="addToCartBttn">&#x2b;</button>
           </div>
-          <div class="pricingContainer">
-            $105.00
-          </div>
+          <div class="pricingContainer">$105.00</div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- mid section banner-->
-    <div id="midBannerSection">
+    <section id="midBannerSection" role="img" aria-label="Assorted men's fragrances arranged in a background collage.">
       <div class="formContainer">
         <p class="formTitleNewsletter">Newsletter</p>
         <p class="formTitle">
@@ -182,102 +165,56 @@
           your first purchase and unlock exclusive deals.
         </p>
         <div id="message"></div>
-        <form id="subscribeForm" action=" ">
-          <input
-            type="text"
-            name="mail"
-            id="emailInput"
-            placeholder="Email Address"
-          /><br />
-          <input type="submit" value="Join Today" id="submitBttn" />
+        <form id="subscribeForm" action="/subscribe" method="post">
+          <label for="email" id="formLabel">Email Address*</label>
+          <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required id="emailInput" /><br />
+          <button type="submit" id="submitBttn">Join today</button>
         </form>
-        <p class="formBottomDesc">
-          By signing up for our email list, you agree to the use of your email
-          address and personal data as described in our Terms & Conditions(link
-          will open in a new tab) . You have the right to withdraw or modify
-          your consent at any time. Please see our Privacy Policy(link will open
-          in a new tab) for additional information, including how to contact
-          Dior or withdraw consent.
-        </p>
-        
+        <p class="formBottomDesc">By signing up for our email list, you agree to the use of your email address and personal data as described in our Terms & Conditions(link will open in a new tab) . You have the right to withdraw or modify your consent at any time. Please see our Privacy Policy(link will open in a new tab) for additional information, including how to contact Dior or withdraw consent.</p>
       </div>
-    </div>
+    </section>
 
     <!-- footer -->
-    <div class="footer">
+    <footer>
       <div class="footerContentContainer">
         <p class="footerContent">
           <span class="footerLinks">Buy Cologne Online</span><br /><br />
 
-          Gent Noir has been America's #1 place to buy discount
-          colognes online since 2003. We stock more than 13,000 men's
-          fragrances, all of them deliverable to your door within just days. Our
-          broad selection of colognes includes celebrity scents, gift sets, best
-          sellers, hard-to-find fragrances, specialty samples, new releases, and
-          even discontinued brands. By buying your next bottle of fragrance
-          online with us, you can save up to 70% off of retail prices, 365 days
-          a year.<br /><br />
+          Gent Noir has been America's #1 place to buy discount colognes online since 2003. We stock more than 13,000 men's fragrances, all of them deliverable to your door within just days. Our broad selection of colognes includes celebrity scents, gift sets, best sellers, hard-to-find fragrances, specialty samples, new releases, and even discontinued brands. By buying your next bottle of fragrance online with us, you can save up to 70% off of retail prices, 365 days a year.<br /><br />
 
-          Our massive collection of fragrances hugely surpasses what you could
-          find at any individual shop. We also offer reviews of all of the
-          perfumes we stock, making it easy to find what you're looking for. As
-          a result, first-time shoppers and the most discerning connoisseurs can
-          both find just the right scent at a surprisingly low price.<br /><br />
+          Our massive collection of fragrances hugely surpasses what you could find at any individual shop. We also offer reviews of all of the perfumes we stock, making it easy to find what you're looking for. As a result, first-time shoppers and the most discerning connoisseurs can both find just the right scent at a surprisingly low price.<br /><br />
 
-          If you are looking to buy discount cologne online or you want to buy
-          brand-name discount fragrances, Gent Noir is the most
-          trusted online store in America. Finding cheap cologne of top-notch
-          quality is nearly impossible in a typical brick-and-mortar shop. It's
-          no surprise that many shoppers imagine they have to pay top dollar for
-          quality. However, the efficient online model of Perfume.com makes it
-          possible for us to pass along the savings to you while optimizing
-          convenience. That's how our satisfied shoppers can afford to indulge
-          in bottles of the very finest “cheap perfume” you'll find anywhere.<br /><br />
+          If you are looking to buy discount cologne online or you want to buy brand-name discount fragrances, Gent Noir is the most trusted online store in America. Finding cheap cologne of top-notch quality is nearly impossible in a typical brick-and-mortar shop. It's no surprise that many shoppers imagine they have to pay top dollar for quality. However, the efficient online model of Perfume.com makes it possible for us to pass along the savings to you while optimizing convenience. That's how our satisfied shoppers can afford to indulge in bottles of the very finest “cheap perfume” you'll find anywhere.<br /><br />
 
-          In addition, ordering with Gent Noir is easy and fast. We
-          ship to every country in the world, and most of our fragrances ship
-          from our headquarters within hours of your order.
+          In addition, ordering with Gent Noir is easy and fast. We ship to every country in the world, and most of our fragrances ship from our headquarters within hours of your order.
         </p>
         <br /><br />
         <p class="footerContent">
           Customer Service Code: 0A<br /><br />
 
-          <span class="footerLinks"
-            ><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a> |
-            <a href="#">U.S. State Privacy Notice</a> | My
-            <a href="#">Privacy Choices</a> </span
-          ><br /><br />
+          <span class="footerLinks"><a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a> | <a href="#">U.S. State Privacy Notice</a> | My <a href="#">Privacy Choices</a> </span><br /><br />
 
-          <span class="footerLinks"
-            >Entire contents Copyright © 1997-2025. FragranceNet.com, Inc. under
-            license to Telescents, Inc.</span
-          ><br /><br />
+          <span class="footerLinks">Entire contents Copyright © 1997-2025. FragranceNet.com, Inc. under license to Telescents, Inc.</span><br /><br />
 
-          Gent Noir is an independent retailer carrying genuine brand
-          name fragrances, skincare, haircare, candles and makeup.<br />
+          Gent Noir is an independent retailer carrying genuine brand name fragrances, skincare, haircare, candles and makeup.<br />
           We are Registered in the US Patent &amp; Trademark Office.<br /><br />
 
           All Rights Reserved.
         </p>
       </div>
-    </div>
+    </footer>
 
     <!-- Slide-in Cart Panel -->
-<div id="slideCart">
-  <div class="cartHeader">
-    <h2>Your Cart</h2>
-    <img id="closeSlideCart" src="images/closeBttnX.png" alt="Close" style="cursor: pointer; width: 30px;" />
-  </div>
-  <ul id="slideCartItems">
-    <li>No items yet</li>
-  </ul>
-  <div id="cartTotal" >
-    Check Out: $0.00
-  </div>
-</div>
-
+    <div id="slideCart">
+      <div class="cartHeader">
+        <h2>Your Cart</h2>
+        <img id="closeSlideCart" src="images/closeBttnX.png" alt="Shopping Cart Close Button" style="cursor: pointer; width: 30px" />
+      </div>
+      <ul id="slideCartItems">
+        <li>No items yet</li>
+      </ul>
+      <div id="cartTotal">Check Out: $0.00</div>
+    </div>
   </body>
   <script src="app.js"></script>
 </html>
-
-
